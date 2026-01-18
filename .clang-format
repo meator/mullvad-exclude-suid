@@ -1,0 +1,12 @@
+---
+BreakBeforeBraces: Allman
+UseTab: Always
+IndentWidth: 4
+TabWidth: 4
+AccessModifierOffset: -4
+PointerAlignment: Middle
+AllowShortBlocksOnASingleLine: Empty
+IndentPPDirectives: BeforeHash
+IndentExternBlock: false
+PPIndentWidth: 2
+AllowShortFunctionsOnASingleLine: InlineOnly

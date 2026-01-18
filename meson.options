@@ -1,0 +1,4 @@
+option('mullvad_exclude_search_strategy', type: 'combo', choices: ['option', 'lookup'], value: 'option', description: 'How should the build system determine the location of \'mullvad-exclude\' executable? If set to option, mullvad_exclude_abs_path will be used. If set to lookup, build system will use Meson\'s executable lookup facilities (find_program()).')
+option('mullvad_exclude_abs_path', type: 'string', value: '/usr/bin/mullvad-exclude', description: 'Absolute path to \'mullvad-exclude\' executable. The default value should be sufficient for most environments.')
+option('set_setuid_on_install', type: 'boolean', value: true, description: 'Set the SETUID bit on the installed executable.')
+option('root_on_install', type: 'boolean', value: true, description: 'Make sure that the installed executable is owned by root to make SETUID function.')
